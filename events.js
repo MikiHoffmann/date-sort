@@ -1,4 +1,4 @@
-/* EVENTS IN MONTMARTRE */
+/* EVENTS */
 // set events
 function $allEvents(title,year,month,day,discription,image) {
     this.title = title;
