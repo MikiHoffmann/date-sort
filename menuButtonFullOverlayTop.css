@@ -1,0 +1,129 @@
+/*
+MENUBUTTON HTML:
+    <div id="menuButton">
+       <div id="topBeam"></div>
+       <div id="middleBeam"></div>
+       <div id="bottomBeam"></div>
+   </div>
+MENU OVERLAY HTML:
+    <div id="menuOverlay" class="menuOverlayClose">
+       <div id="menuOverlayContent">
+           --- additional content/ links ---
+       </div>
+   </div>
+*/
+:root {
+    --beamclr: rgb(255,255,255); /* color of menu beams */
+    --pnk: rgb(255,192,203); /* color when close menu */
+    --overlayclr: rgb(0,0,0); /* menu overlay color */
+    --grey: rgb(124, 129, 129);
+}
+/* menubutton: change ONLY the position! */
+#menuButton {
+    position: fixed;
+    top: .7em;
+    right: .7em;
+    height: 3.125em;
+    width: 3.125em;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2000;
+}
+.topBeam {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: .625em;
+    width: 3.125em;
+    background-color: var(--beamclr);
+    transition: .7s;
+}
+.middleBeam {
+    position: absolute;
+    top: 1.25em;
+    left: 0;
+    height: .625em;
+    width: 3.125em;
+    background-color: var(--beamclr);
+    transition: .7s;
+}
+.bottomBeam {
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    height: .625em;
+    width: 3.125em;
+    background-color: var(--beamclr);
+    transition: .7s;
+}
+.topBeamClose {
+    position: absolute;
+    top:43%;
+    left: 5%;
+    transform: rotate(-45deg);
+    height: .625em;
+    width: 3.125em;
+    background-color: var(--pnk);
+    transition: .7s;
+}
+.middleBeamClose {
+    position: absolute;
+    top: 1.25em;
+    left: 0;
+    height: 0;
+    width: 3.125em;
+    background-color: transparent;
+    transition: .7s;
+}
+.bottomBeamClose {
+    position: absolute;
+    top:43%;
+    left: 5%;
+    transform: rotate(45deg);
+    height: .625em;
+    width: 3.125em;
+    background-color: var(--pnk);
+    transition: .7s;
+}
+#menuOverlay {
+    overflow: hidden;
+    border-bottom: 1px solid var(--beamclr);
+}
+.menuOverlayClose {
+    position: fixed;
+    top: -1px;
+    height: 0%;
+    width: 100%;
+    transition: .7s;
+    z-index: 1900;
+}
+.menuOverlay {
+    position: fixed;
+    top: -1px;
+    height: 100%;
+    width: 100%;
+    transition: .7s;
+    z-index: 1900;
+}
+#menuOverlayContent {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media only screen and (max-device-height: 400px) {
+    #menuOverlayContent {
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+#menuOverlayContent a {
+    width: fit-content;
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em auto;
+}
+
