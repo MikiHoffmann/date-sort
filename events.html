@@ -1,0 +1,174 @@
+<!-- WWW.CAFEMONTMARTRE.NL HTML PAGE SETUP-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="montmartreIMAGE/Mlogo/montmartre-M-black-50px-transparant.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="montmartreCSS/montmartre.css"/>
+    <script src="montmartreJS/jquery-3.6.0.js"></script>
+    <script src="montmartreJS/menuButtonFullOverlayTop.js"></script>
+    <script src="montmartreJS/events.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#menuButton').makeMenuButton('#menuButton','#topBeam','#middleBeam','#bottomBeam','#menuOverlay');
+            makeEvents();
+        });
+    </script>
+    <title>events | café Montmartre</title>
+</head>
+ 
+<body class="hasBackground">
+    <nav>
+        <!-- NAVIGATION MOBILE -->
+        <div id="navMobile">
+            <div id="menuButton">
+                <div id="topBeam"></div>
+                <div id="middleBeam"></div>
+                <div id="bottomBeam"></div>
+            </div>
+        </div>
+        <!-- MENU OVERLAY -->
+        <div id="menuOverlay" class="menuOverlayClose hasBackground">
+            <div id="menuOverlayContent">
+                <a href="index.html">home</a>
+                <a href="about.html">about us</a>
+                <a class="active" href="events.html">events</a>
+                <a href="gallery.html">gallery</a>
+            </div>
+        </div>
+        <!-- NAVIGATION TABLET/PC -->
+        <div id="navTabletPC">
+            <a href="index.html">home</a>
+            <a href="about.html">about us</a>
+            <a class="active" href="events.html">events</a>
+            <a href="gallery.html">gallery</a>
+        </div>
+    </nav>
+   
+    <header>
+        <div id="mainHeaderMobile" class="hasBackground">
+            <img class="mainLogo" src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/>
+        </div>
+    </header>
+
+    <article>
+        <!-- UPPER ARTICLE -->
+        <div id="articleHeader">
+            <h2>events</h2>
+        </div>
+        <!-- FIRST ROW -->
+        <div class="row">
+            <!-- LEFT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- FIRST ARTICLE -->
+                <div id="firstArticle">
+                    <p>
+                        Als er iets te vieren valt, is café Montmartre er natuurlijk bij.
+                        <br>
+                        Tekst 
+                    </p>
+                    <p>
+                        Tekst
+                        <br>
+                        Tekst
+                    </p>
+                    <p>
+                        <img src="montmartreIMAGE/Mlogo/banner-disco-sphere-900.png" alt="disco sphere"/>
+                    </p>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- SECOND ARTICLE -->
+                <div id="secondArticle">
+                        <h3 id="eventNext"></h3>
+                        <!-- NEXT EVENT -->
+                        <div id="nextEvents" class="hasBackground"></div>
+                </div>
+            </div>
+        </div>
+        <!-- SECOND ROW -->
+        <div class="row">
+                <!-- THIRD ARTICLE -->
+                <div id="thirdArticle">
+                    <h3>events in het verleden</h3>
+                    
+                    <div id="prevEvents" class="hasBackground"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footerTotal">
+            <!-- FOOTER TOP SECTION -->
+            <div id="footerTop">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            Café Le Montmartre de Paris
+                            <br>
+                            Halvemaansteeg 17
+                            <br>
+                            1017CR Amsterdam
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html">www.cafemontmartre.nl</a>
+                            <br>
+                            <a href="mailto:info@cafemontmartre.nl" target="_blank">info@cafemontmartre.nl</a>
+                            <br>
+                            <a href="https://api.whatsapp.com/send?phone=+310652004763" target="_blank">06 52 00 47 63</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- FOOTER MIDDLE SECTION-->
+            <div id="footerMiddle">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            follow us on
+                            <br>
+                            <a href="https://www.facebook.com/cafemontmartre" target="_blank">FACEBOOK</a>  or <a href="https://www.instagram.com/cafemontmartre/" target="_blank">INSTAGRAM</a>
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html"><img src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/></a>
+                            <div class="kvk">
+                                kvk: 0000.0000.0000
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <!-- FOOTER BOTTOM SECTION -->
+            <div id="footerBottom">
+                <section class="row">
+                    <div class="column-4 column-small-4">
+                        - This website is designed by miki -
+                        
+                    </div>
+                    <div class="column-4 column-small-4">
+                        - Amsterdam 2021 -
+                        
+                    </div>
+                
+                    <div class="column-4 column-small-4">
+                        - <a href="mailto:mh.miki.hoffmann@gmail.com" target="_blank">mh.miki.hoffmann@gmail.com</a> -
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
