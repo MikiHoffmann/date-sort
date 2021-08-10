@@ -1,2 +1,2 @@
 # montmartre
-The website I'm designing for a friend.
+The website I designed for a friend.
