@@ -1,0 +1,432 @@
+<!-- WWW.CAFEMONTMARTRE.NL HTML PAGE SETUP-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="montmartreIMAGE/Mlogo/montmartre-M-pnk-100-transparant.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="montmartreCSS/montmartre.css"/>
+    <script src="montmartreJS/jquery-3.6.0.js"></script>
+    <script src="montmartreJS/menuButtonFullOverlayTop.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#menuButton').makeMenuButton('#menuButton','#topBeam','#middleBeam','#bottomBeam','#menuOverlay');
+            $('#toTopButton').makeToTopButton('#toTopButton');
+            $('#thumbnails > div > div > .galleryThumb').makeGalleryContent('#galleryContainers > .galleryContainer', '#galleryContainers > .galleryContainer > .galleryContent','#closeGallery');
+        });
+    </script>
+    <title>gallery | café Montmartre</title>
+</head>
+ 
+<body class="hasBackground">
+    <nav>
+        <!-- NAVIGATION MOBILE -->
+        <a class="lang" href="enggallery.html"><img src="montmartreIMAGE/Mlogo/English-flag-48px.png" alt="English flag"/></a>
+        <div id="navMobile">
+            <div id="menuButton">
+                <div id="topBeam"></div>
+                <div id="middleBeam"></div>
+                <div id="bottomBeam"></div>
+            </div>
+        </div>
+        <!-- MENU OVERLAY -->
+        <div id="menuOverlay" class="menuOverlayClose hasBackground">
+            <div id="menuOverlayContent">
+                <a href="index.html">home</a>
+                <a href="about.html">over ons</a>
+                <a href="events.html">events</a>
+                <a class="active" href="gallery.html">gallery</a>
+            </div>
+        </div>
+        <!-- NAVIGATION TABLET/PC -->
+        <div id="navTabletPC">
+            <a href="index.html">home</a>
+            <a href="about.html">over ons</a>
+            <a href="events.html">events</a>
+            <a class="active" href="gallery.html">gallery</a>
+            <a href="enggallery.html"><img src="montmartreIMAGE/Mlogo/English-flag-48px.png" alt="English flag"/></a>
+        </div>
+        <!-- TO TOP BUTTON -->
+        <div id="toTopButton" class="hasBackground">
+            <img src="montmartreIMAGE/Mlogo/arrow-up-48px.png" alt="arrow up"/>
+        </div>
+    </nav>
+   
+    <header>
+        <div id="mainHeaderMobile" class="hasBackground">
+            <img class="mainLogo" src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/>
+        </div>
+    </header>
+
+    <article>
+        <!-- UPPER ARTICLE -->
+        <div id="articleHeader">
+            <h2>Plaatjes van mooie avonden</h2>
+        </div>
+        <!-- FIRST ROW -->
+        <div class="row">
+            <!-- LEFT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- FIRST ARTICLE -->
+                <div id="firstArticle">
+                    <p>
+                        In de Montmartre hebben we de afgelopen jaren al vele mooie avonden, feestjes en evenementen mogen beleven.
+                    </p>
+                    <p>
+                        Hier hebben we een selectie gemaakt van deze momenten.
+                    </p>
+                    <p>
+                        En natuurlijk komen er nog heel veel bij...
+                        <br><br>
+                    </p>
+                    <p>
+                        <img src="montmartreIMAGE/Mlogo/banner-camera-900.png" alt="camera"/>
+                    </p>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- SECOND ARTICLE -->
+                <div id="secondArticle">
+                    <h3>Montmartre-square | Pride 2019</h3>
+                    <video id="prideMM2019" width="500" controls autoplay muted>
+                        <source src="montmartreIMAGE/Mgallery/pride/pride2019-MontmartreAftermovie.mp4" type="video/mp4"/>
+                        Your browser does not support HTML5 video-file.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- SECOND ROW -->
+        <div class="row">
+            <div class="instructions">
+                klik op de thumbnails voor de galleries...
+            </div>
+            
+            <!-- THIRD ARTICLE -->
+            <div id="thirdArticle">
+
+                <!-- GALLERY TUMBNAILS-->
+                <!-- NEW GALLERIES ON TOP OF THE LISTING -->
+                <div id="thumbnails">
+
+                    <div class="row">
+                        <!-- DIVERSE GEZELLIGHEID -->
+                        <div class="column-4 column-small-4">
+                            <h3>diverse gezelligheid</h3>
+                            <img class="galleryThumb" src="montmartreIMAGE/Mgallery/diversen/schone-wc.jpg" alt="schone wc"/>
+                        </div>
+                        <!-- VERBOUWING -->
+                        <div class="column-4 column-small-4">
+                            <h3>metamorfose</h3>
+                            <img class="galleryThumb" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-0.jpg" alt="action"/>
+                        </div>
+                        <!-- THEMA DECO -->
+                        <div class="column-4 column-small-4">
+                            <h3>thema-decoratie</h3>
+                            <img class="galleryThumb" src="montmartreIMAGE/Mgallery/themadeco/feest.jpg" alt="feest"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- JAPAN -->
+                        <div class="column-4 column-small-4">
+                            <h3>japan party 2020</h3>
+                            <img class="galleryThumb" src="montmartreIMAGE/Mgallery/japan2020/japan-1.jpg" alt="japan"/>
+                        </div>
+                        <!-- HALLOWEEN -->
+                        <div class="column-4 column-small-4">
+                            <h3>halloween 2019</h3>
+                            <img class="galleryThumb" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-1.jpg" alt="halloween"/>
+                        </div>
+                        <!-- FLINTSTONES -->
+                        <div class="column-4 column-small-4">
+                            <h3>flintstones party 2019</h3>
+                            <img class="galleryThumb" src="montmartreIMAGE/Mgallery/flintstones2019/fintstones-1.jpg" alt="flintstones"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- KERST -->
+                        <div class="column-4 column-small-4">
+                            <h3>kerstversiering</h3>
+                            <img class="galleryThumb" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-0.jpg" alt="kerst"/>
+                        </div>
+                        <!-- SINERKLAAS -->
+                        <div class="column-4 column-small-4">
+                            <h3>sinterklaas 2017</h3>
+                            <img class="galleryThumb" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-0.jpg" alt="sinterklaas"/>
+                        </div>
+                        
+                    </div>    
+                    
+                </div>
+                <!-- GALLERY CONTAINERS -->
+                <img id="closeGallery" src="montmartreIMAGE/Mlogo/close-48px.png" alt="close"/>
+                
+                <!-- NEW GALLERIES ON TOP OF THE LISTING -->
+                <div id="galleryContainers">
+                    
+                    <!-- DIVERSE GEZELLIGHEID -->
+                    <div class="galleryContainer hasBackground">
+                        <div class="galleryContent">
+                            <div class="row">
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/personeelsuitje-tilburg-2021.jpg" alt="pesoneelsuitje"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/sjoerd-mondkapje.jpg" alt="sjoerd"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/gezelligheid-1.jpg" alt="gezelligheid"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/opdekruk.jpg" alt="opd e kruk"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/pyjama-1.jpg" alt="pyjamaparty"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/pyjama-2.jpg" alt="pyjamaparty"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/puntmuts.jpg" alt="puntmuts"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/dj-ron.jpg" alt="dj ron"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/paula-sjoerd.jpg" alt="paula sjoerd"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/90s-1.jpg" alt="90's party"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/annie.jpg" alt="annie"/>
+                                </div>
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/pride-stage.jpg" alt="pride stage"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/tirol-1.jpg" alt="tirol"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/santas-help.jpg" alt="santa's helper"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/mr-miss-santa.jpg" alt="mr miss santa"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/goes-drag-1.jpg" alt="drag"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/sinterklazen-2019.jpg" alt="sinterklazen"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/pyjama-3.jpg" alt="pyjamaparty"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/valentine2019-1.jpg" alt="valentine"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/diversen/valentine-2019-2.jpg" alt="valentine"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VERBOUWING -->
+                    <div class="galleryContainer hasBackground">
+                        <div class="galleryContent">
+                            <div class="row">
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-1.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-3.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-2.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-5.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-4.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-6.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-7.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-8.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-9.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-11.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-10.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-22.jpg" alt="verbouwing"/>
+                                </div>
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-12.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-13.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-15.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-14.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-16.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-17.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-19.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-18.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/verbouwing-21.jpg" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwingShort/bar-zaag.png" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwingShort/bar-los.png" alt="verbouwing"/>
+                                </div>
+                                <div class="column-12 column-small-12">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwingShort/finished.png" alt="verbouwing"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/verbouwing2020/KLAAR.jpg" alt="verbouwing"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- THEMA DECO -->
+                    <div class="galleryContainer hasBackground">
+                        <div class="galleryContent">
+                            <div class="row">
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/themadeco/80s-1.jpg" alt="80's"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/themadeco/80s-2.jpg" alt="80's"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/themadeco/tiroler-1.jpg" alt="tirol"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/themadeco/tiroler-2.jpg" alt="tirol"/>
+                                </div>
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-2.jpg" alt="japan"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-6.jpg" alt="japan"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/themadeco/valentinesday-1.jpg" alt="valentine"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/themadeco/valentinesday-2.jpg" alt="valentine"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- JAPAN -->
+                    <div class="galleryContainer hasBackground">
+                        <div class="galleryContent">
+                            <div class="row">
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-2.jpg" alt="japan"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-3.jpg" alt="japan"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-4.jpg" alt="japan"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-9.jpg" alt="japan"/>
+                                </div>
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-5.jpg" alt="japan"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-6.jpg" alt="japan"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-7.jpg" alt="japan"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/japan2020/japan-8.jpg" alt="japan"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HALLOWEEN -->
+                    <div class="galleryContainer hasBackground">
+                            <div class="galleryContent">
+                                <div class="row">
+                                    <div class="column-6 column-small-6">
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-2.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-3.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-5.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-6.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-12.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-8.jpg" alt="halloween"/>
+                                    </div>
+                                    <div class="column-6 column-small-6">
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-7.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-9.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-10.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-11.jpg" alt="halloween"/>
+                                        <img class="galleryIMG" src="montmartreIMAGE/Mgallery/halloween2019/halloween2019-4.jpg" alt="halloween"/>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- FLINTSTONES -->
+                    <div class="galleryContainer hasBackground">
+                        <div class="galleryContent">
+                            <div class="row">
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/flintstones2019/flintstones-2.jpg" alt="flintstones"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/flintstones2019/flintstones-3.jpg" alt="flintstones"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/flintstones2019/flintstones-4.jpg" alt="flintstones"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/flintstones2019/flintstones-8.jpg" alt="flintstones"/>
+                                </div>
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/flintstones2019/flintstones-5.jpg" alt="flintstones"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/flintstones2019/flintstones-6.jpg" alt="flintstones"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/flintstones2019/flintstones-7.jpg" alt="flintstones"/>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- KERST -->
+                    <div class="galleryContainer hasBackground">
+                        <div class="galleryContent">
+                            <div class="row">
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-1.jpg" alt="kerst"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-2.jpg" alt="kerst"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-4.jpg" alt="kerst"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-5.jpg" alt="kerst"/>
+                                </div>
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-3.jpg" alt="kerst"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-6.jpg" alt="kerst"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-7.jpg" alt="kerst"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/kerstversiering/kerst-8.jpg" alt="kerst"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SINTERKLAAS -->
+                    <div class="galleryContainer hasBackground">
+                        <div class="galleryContent">
+                            <div class="row">
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-1.jpg" alt="sinterklaas"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-2.jpg" alt="sinterklaas"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-3.jpg" alt="sinterklaas"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-8.jpg" alt="sinterklaas"/>
+                                </div>
+                                <div class="column-6 column-small-6">
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-5.jpg" alt="sinterklaas"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-6.jpg" alt="sinterklaas"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-4.jpg" alt="sinterklaas"/>
+                                    <img class="galleryIMG" src="montmartreIMAGE/Mgallery/sinterklaas2017/sint-7.jpg" alt="sinterklaas"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+            </div>
+            
+        </div>    
+            
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footerTotal">
+            <!-- FOOTER TOP SECTION -->
+            <div id="footerTop">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            Café Le Montmartre de Paris
+                            <br>
+                            Halvemaansteeg 17
+                            <br>
+                            1017CR Amsterdam
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html">www.cafemontmartre.nl</a>
+                            <br>
+                            <a href="mailto:info@cafemontmartre.nl" target="_blank">info@cafemontmartre.nl</a>
+                            <br>
+                            <a href="https://api.whatsapp.com/send?phone=+310652004763" target="_blank">06 52 00 47 63</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- FOOTER MIDDLE SECTION-->
+            <div id="footerMiddle">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            volg ons op
+                            <br>
+                            <a href="https://www.facebook.com/cafemontmartre" target="_blank">FACEBOOK</a>  of <a href="https://www.instagram.com/cafemontmartre/" target="_blank">INSTAGRAM</a>
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html"><img src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/></a>
+                            <div class="kvk">
+                                kvk: 76827593
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <!-- FOOTER BOTTOM SECTION -->
+            <div id="footerBottom">
+                <section class="row">
+                    
+                    <div class="column-4 column-small-4">
+                        - deze website is ontworpen door miki -                        
+                    </div>
+                    <div class="column-4 column-small-4">
+                        - Amsterdam 2021 -    
+                    </div>
+                
+                    <div class="column-4 column-small-4">
+                        - <a href="https://www.miki101.nl" target="_blank">www.miki101.nl</a> -
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

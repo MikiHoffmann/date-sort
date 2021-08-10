@@ -1,0 +1,193 @@
+<!-- WWW.CAFEMONTMARTRE.NL HTML PAGE SETUP-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="montmartreIMAGE/Mlogo/montmartre-M-pnk-100-transparant.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="montmartreCSS/montmartre.css"/>
+    <script src="montmartreJS/jquery-3.6.0.js"></script>
+    <script src="montmartreJS/menuButtonFullOverlayTop.js"></script>
+    <script src="montmartreJS/events.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#menuButton').makeMenuButton('#menuButton','#topBeam','#middleBeam','#bottomBeam','#menuOverlay');
+            $('#toTopButton').makeToTopButton('#toTopButton');
+            makeEvents();
+        });
+    </script>
+    <title>events | café Montmartre</title>
+</head>
+ 
+<body class="hasBackground">
+    <nav>
+        <!-- NAVIGATION MOBILE -->
+        <a class="lang" href="engevents.html"><img src="montmartreIMAGE/Mlogo/English-flag-48px.png" alt="English flag"/></a>
+        <div id="navMobile">
+            <div id="menuButton">
+                <div id="topBeam"></div>
+                <div id="middleBeam"></div>
+                <div id="bottomBeam"></div>
+            </div>
+        </div>
+        <!-- MENU OVERLAY -->
+        <div id="menuOverlay" class="menuOverlayClose hasBackground">
+            <div id="menuOverlayContent">
+                <a href="index.html">home</a>
+                <a href="about.html">over ons</a>
+                <a class="active" href="events.html">events</a>
+                <a href="gallery.html">gallery</a>
+            </div>
+        </div>
+        <!-- NAVIGATION TABLET/PC -->
+        <div id="navTabletPC">
+            <a href="index.html">home</a>
+            <a href="about.html">over ons</a>
+            <a class="active" href="events.html">events</a>
+            <a href="gallery.html">gallery</a>
+            <a href="engevents.html"><img src="montmartreIMAGE/Mlogo/English-flag-48px.png" alt="English flag"/></a>
+        </div>
+        <!-- TO TOP BUTTON -->
+        <div id="toTopButton" class="hasBackground">
+            <img src="montmartreIMAGE/Mlogo/arrow-up-48px.png" alt="arrow up"/>
+        </div>
+    </nav>
+   
+    <header>
+        <div id="mainHeaderMobile" class="hasBackground">
+            <img class="mainLogo" src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/>
+        </div>
+    </header>
+
+    <article>
+        <!-- UPPER ARTICLE -->
+        <div id="articleHeader">
+            <h2>events</h2>
+        </div>
+        <!-- FIRST ROW -->
+        <div class="row">
+            <!-- LEFT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- FIRST ARTICLE -->
+                <div id="firstArticle">
+                    <p>
+                        Als er iets te vieren valt, is café Montmartre er natuurlijk bij.
+                        <br>
+                        Regelmatig organiseren wij leuke events.
+                    </p>
+                    <p>
+                        Als de corona-restricties niet meer gelden hebben wij ook weer:
+                        <br>
+                        Elke 1<sup>ste</sup> en 3<sup>de</sup> vrijdag van de maand een knotsgekke thema avond.
+                        <br>
+                        Elke zondag "See You on Sunday Live" met elke keer een andere zanger/zangeres.
+                    </p>
+                    <p>
+                        <h3>- AMSTERDAM PRIDE -</h3>
+                        <div id="red" class="prideFlag"></div>
+                        <div id="orange" class="prideFlag"></div>
+                        <div id="yellow" class="prideFlag"></div>
+                        <div id="green" class="prideFlag"></div>
+                        <div id="blue" class="prideFlag"></div>
+                        <div id="purple" class="prideFlag"></div>
+                        <br>
+                        En natuurlijk is er tijdens de Pride-week 'Het Montmartre-square' op het Rembrandtplein.
+                    </p>
+                    <p>
+                        <img src="montmartreIMAGE/Mlogo/banner-disco-sphere-900.png" alt="disco sphere"/>
+                    </p>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- SECOND ARTICLE -->
+                <div id="secondArticle">
+                        <h3 id="eventNext"></h3>
+                        <!-- NEXT EVENT -->
+                        <div id="nextEvents" class="hasBackground"></div>
+                </div>
+            </div>
+        </div>
+        <!-- SECOND ROW -->
+        <div class="row">
+                <!-- THIRD ARTICLE -->
+                <div id="thirdArticle">
+                    <h3>events in het verleden</h3>
+                    
+                    <div id="prevEvents" class="hasBackground"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footerTotal">
+            <!-- FOOTER TOP SECTION -->
+            <div id="footerTop">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            Café Le Montmartre de Paris
+                            <br>
+                            Halvemaansteeg 17
+                            <br>
+                            1017CR Amsterdam
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html">www.cafemontmartre.nl</a>
+                            <br>
+                            <a href="mailto:info@cafemontmartre.nl" target="_blank">info@cafemontmartre.nl</a>
+                            <br>
+                            <a href="https://api.whatsapp.com/send?phone=+310652004763" target="_blank">06 52 00 47 63</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- FOOTER MIDDLE SECTION-->
+            <div id="footerMiddle">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            volg ons op
+                            <br>
+                            <a href="https://www.facebook.com/cafemontmartre" target="_blank">FACEBOOK</a>  of <a href="https://www.instagram.com/cafemontmartre/" target="_blank">INSTAGRAM</a>
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html"><img src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/></a>
+                            <div class="kvk">
+                                kvk: 76827593
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <!-- FOOTER BOTTOM SECTION -->
+            <div id="footerBottom">
+                <section class="row">
+                    
+                    <div class="column-4 column-small-4">
+                        - deze website is ontworpen door miki -                        
+                    </div>
+                    <div class="column-4 column-small-4">
+                        - Amsterdam 2021 -    
+                    </div>
+                
+                    <div class="column-4 column-small-4">
+                        - <a href="https://www.miki101.nl" target="_blank">www.miki101.nl</a> -
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

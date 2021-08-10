@@ -1,0 +1,193 @@
+<!-- WWW.CAFEMONTMARTRE.NL HTML PAGE SETUP-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="montmartreIMAGE/Mlogo/montmartre-M-pnk-100-transparant.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="montmartreCSS/montmartre.css"/>
+    <script src="montmartreJS/jquery-3.6.0.js"></script>
+    <script src="montmartreJS/menuButtonFullOverlayTop.js"></script>
+    <script src="montmartreJS/jquery.cycle.all.js"></script>
+    <script src="montmartreJS/verbouwingGallery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#menuButton').makeMenuButton('#menuButton','#topBeam','#middleBeam','#bottomBeam','#menuOverlay');
+            $('#toTopButton').makeToTopButton('#toTopButton');
+            setImages();
+        });
+    </script>
+    <title>over ons | café Montmartre</title>
+</head>
+ 
+<body class="hasBackground">
+    <nav>
+        <!-- NAVIGATION MOBILE -->
+        <a class="lang" href="engabout.html"><img src="montmartreIMAGE/Mlogo/English-flag-48px.png" alt="English flag"/></a>
+        <div id="navMobile">
+            <div id="menuButton">
+                <div id="topBeam"></div>
+                <div id="middleBeam"></div>
+                <div id="bottomBeam"></div>
+            </div>
+        </div>
+        <!-- MENU OVERLAY -->
+        <div id="menuOverlay" class="menuOverlayClose hasBackground">
+            <div id="menuOverlayContent">
+                <a href="index.html">home</a>
+                <a class="active" href="about.html">over ons</a>
+                <a href="events.html">events</a>
+                <a href="gallery.html">gallery</a>
+            </div>
+        </div>
+        <!-- NAVIGATION TABLET/PC -->
+        <div id="navTabletPC">
+            <a href="index.html">home</a>
+            <a class="active" href="about.html">over ons</a>
+            <a href="events.html">events</a>
+            <a href="gallery.html">gallery</a>
+            <a href="engabout.html"><img src="montmartreIMAGE/Mlogo/English-flag-48px.png" alt="English flag"/></a>
+        </div>
+        <!-- TO TOP BUTTON -->
+        <div id="toTopButton" class="hasBackground">
+            <img src="montmartreIMAGE/Mlogo/arrow-up-48px.png" alt="arrow up"/>
+        </div>
+    </nav>
+   
+    <header>
+        <div id="mainHeaderMobile" class="hasBackground">
+            <img class="mainLogo" src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/>
+        </div>
+    </header>
+
+    <article>
+        <!-- UPPER ARTICLE -->
+        <div id="articleHeader">
+            <h2>over ons...</h2>
+        </div>
+        <!-- FIRST ROW -->
+        <div class="row">
+            <!-- LEFT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- FIRST ARTICLE -->
+                <div id="firstArticle">
+                    <p>
+                        Café Montmartre is bekend om zijn altijd sfeervolle thema versieringen, de discobollen,
+                        <br>
+                        de unieke ruim 50 jaar oude monumentale wandschilderingen van '<a class="active" href="https://nl.wikipedia.org/wiki/Eppo_Doeve" target="_blank">Eppo&#32;Doeve</a>',
+                        <br>
+                        het altijd vriendelijke personeel en vooral niet te vergeten de Nederlandstalige muziek, songfestival meezingers, de klassiekers uit de jaren 80 en 90, afgewisseld met eigentijdse hits.
+                    </p>
+                    <p>
+                        Maar de Montmartre is natuurlijk ook de ideale locatie voor verjaardagen, bedrijfsborrels, vriendengroepen en nog veel meer...
+                    </p>
+                    <p>
+                        Kortom Café Montmartre heeft alle ingrediënten voor een geslaagd avondje uit.
+                    </p>
+                    <h3>contact</h3>
+                    <p>
+                        Neem voor meer informatie of het maken van een afspraak gerust contact op.
+                        <br><br>
+                        <a href="mailto:info@cafemontmartre.nl" target="_blank">info@cafemontmartre.nl</a>
+                        <br><br>
+                        <a href="https://api.whatsapp.com/send?phone=+310652004763" target="_blank">06 52 00 47 63</a>
+                    </p>
+                    <p>
+                        <img src="montmartreIMAGE/Mlogo/banner-wallpaper-900.png" alt="Montmartre wallpaper"/>
+                    </p>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- SECOND ARTICLE -->
+                <div id="secondArticle">
+                    <div id="verbouwing">
+                        <h3>in de tussentijd...</h3>
+                        <p>
+                            Ondanks dat we een hele tijd gesloten zijn geweest, hebben we niet stilgezeten.
+                            <br>
+                            We hebben onze tijd nuttig besteed en de Montmartre een kleine metamorfose gegeven
+                            om jouw "Montmartre-belevenis" nóg beter te maken.
+                        </p>
+                        <p>
+                            Een kleine impressie van deze verbouwing:
+                        </p>
+                        <div id="verbouwingsGallery" class="hasBackground"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footerTotal">
+            <!-- FOOTER TOP SECTION -->
+            <div id="footerTop">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            Café Le Montmartre de Paris
+                            <br>
+                            Halvemaansteeg 17
+                            <br>
+                            1017CR Amsterdam
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html">www.cafemontmartre.nl</a>
+                            <br>
+                            <a href="mailto:info@cafemontmartre.nl" target="_blank">info@cafemontmartre.nl</a>
+                            <br>
+                            <a href="https://api.whatsapp.com/send?phone=+310652004763" target="_blank">06 52 00 47 63</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- FOOTER MIDDLE SECTION-->
+            <div id="footerMiddle">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            volg ons op
+                            <br>
+                            <a href="https://www.facebook.com/cafemontmartre" target="_blank">FACEBOOK</a>  of <a href="https://www.instagram.com/cafemontmartre/" target="_blank">INSTAGRAM</a>
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html"><img src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/></a>
+                            <div class="kvk">
+                                kvk: 76827593
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <!-- FOOTER BOTTOM SECTION -->
+            <div id="footerBottom">
+                <section class="row">
+                    
+                    <div class="column-4 column-small-4">
+                        - deze website is ontworpen door miki -                        
+                    </div>
+                    <div class="column-4 column-small-4">
+                        - Amsterdam 2021 -    
+                    </div>
+                
+                    <div class="column-4 column-small-4">
+                        - <a href="https://www.miki101.nl" target="_blank">www.miki101.nl</a> -
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
