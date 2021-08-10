@@ -1,0 +1,235 @@
+<!-- WWW.CAFEMONTMARTRE.NL HTML PAGE SETUP-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="montmartreIMAGE/Mlogo/montmartre-M-pnk-100-transparant.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="montmartreCSS/montmartre.css"/>
+    <script src="montmartreJS/jquery-3.6.0.js"></script>
+    <script src="montmartreJS/menuButtonFullOverlayTop.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#menuButton').makeMenuButton('#menuButton','#topBeam','#middleBeam','#bottomBeam','#menuOverlay');
+            $('#toTopButton').makeToTopButton('#toTopButton');
+        });
+    </script>
+    <title>home | café Montmartre</title>
+</head>
+ 
+<body class="hasBackground">
+    <nav>
+        <!-- NAVIGATION MOBILE -->
+        <a class="lang" href="enghome.html"><img src="montmartreIMAGE/Mlogo/English-flag-48px.png" alt="English flag"/></a>
+        <div id="navMobile">
+            <div id="menuButton">
+                <div id="topBeam"></div>
+                <div id="middleBeam"></div>
+                <div id="bottomBeam"></div>
+            </div>
+        </div>
+        <!-- MENU OVERLAY -->
+        <div id="menuOverlay" class="menuOverlayClose hasBackground">
+            <div id="menuOverlayContent">
+                <a class="active" href="index.html">home</a>
+                <a href="about.html">over ons</a>
+                <a href="events.html">events</a>
+                <a href="gallery.html">gallery</a>
+                
+            </div>
+        </div>
+        <!-- NAVIGATION TABLET/PC -->
+        <div id="navTabletPC">
+            <a class="active" href="index.html">home</a>
+            <a href="about.html">over ons</a>
+            <a href="events.html">events</a>
+            <a href="gallery.html">gallery</a>
+            <a href="enghome.html"><img src="montmartreIMAGE/Mlogo/English-flag-48px.png" alt="English flag"/></a>
+        </div>
+        <!-- TO TOP BUTTON -->
+        <div id="toTopButton" class="hasBackground">
+            <img src="montmartreIMAGE/Mlogo/arrow-up-48px.png" alt="arrow up"/>
+        </div>
+    </nav>
+   
+    <header>
+        <div id="mainHeaderMobile" class="hasBackground">
+            <img class="mainLogo" src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/>
+        </div>
+    </header>
+
+    <article>
+        <!-- UPPER ARTICLE -->
+        <div id="articleHeader">
+            <h2>welkom bij café Montmartre</h2>
+        </div>
+        <!-- FIRST ROW -->
+        <div class="row">
+            <!-- LEFT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- FIRST ARTICLE -->
+                <div id="firstArticle">
+                    <p>
+                        Café Montmartre is één van de gezelligste en bekendste Gay Cafés van Amsterdam, waar iedereen welkom is.
+                        <br>
+                        Al ruim 40 jaar is Café Montmartre een begrip in Nederland. 
+                    </p>    
+                       
+                    <p>
+                        Kom een keer langs voor een borrel en ervaar zelf de echte Café Montmartre gezelligheid!
+                    </p>
+                    <p>
+                        <img src="montmartreIMAGE/Mlogo/banner-M-900.png" alt="golden M"/>
+                    </p>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- SECOND ARTICLE -->
+                <div id="secondArticle">
+                    <table id="open">
+                        <caption><h3>openingstijden</h3></caption>
+                        <tr>
+                            <td>maandag</td>
+                            <td>17:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>dinsdag</td>
+                            <td>17:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>woensdag</td>
+                            <td>17:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>donderdag</td>
+                            <td>17:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>vrijdag</td>
+                            <td>17:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>zaterdag</td>
+                            <td>17:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>zondag</td>
+                            <td>17:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">(aangepaste openingstijden ivm corona)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- SECOND ROW -->
+        <div class="row">
+            <!-- LEFT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- THIRD ARTICLE -->
+                <div id="thirdArticle">
+                    <p>
+                        Na een lange lockdown zijn we dan eindelijk weer open!
+                        <br>
+                        Uiteraard willen wij iedereen vragen zich nog even aan de corona-regels te houden...
+                        <br>
+                        <ul>
+                            <li>desinfecteer je handen bij binnenkomst</li>
+                            <li>houd 1,5 meter afstand van anderen</li>
+                            <li>blijf lekker op je kruk zitten</li>
+                            <li>max 30 personen toegestaan</li>
+                            <li>reserveren is alleen mogelijk aan de deur</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="column-6 column-small-6">
+                <!-- FOURTH ARTICLE -->
+                <div id="fourthArticle">
+                    <div id="facebookTimeline">
+                        <iframe id="timeline" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcafemontmartre%2F&tabs=timeline&width=250&height=300&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" 
+                            scrolling="no" 
+                            frameborder="1" 
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footerTotal">
+            <!-- FOOTER TOP SECTION -->
+            <div id="footerTop">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            Café Le Montmartre de Paris
+                            <br>
+                            Halvemaansteeg 17
+                            <br>
+                            1017CR Amsterdam
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html">www.cafemontmartre.nl</a>
+                            <br>
+                            <a href="mailto:info@cafemontmartre.nl" target="_blank">info@cafemontmartre.nl</a>
+                            <br>
+                            <a href="https://api.whatsapp.com/send?phone=+310652004763" target="_blank">06 52 00 47 63</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- FOOTER MIDDLE SECTION-->
+            <div id="footerMiddle">
+                <section class="row">
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            volg ons op
+                            <br>
+                            <a href="https://www.facebook.com/cafemontmartre" target="_blank">FACEBOOK</a>  of <a href="https://www.instagram.com/cafemontmartre/" target="_blank">INSTAGRAM</a>
+                        </div>
+                    </div>
+                    <div class="column-6 column-small-6">
+                        <div class="footerSection">
+                            <a href="index.html"><img src="montmartreIMAGE/Mlogo/montmartre-full-white-150px-transparant.png" alt="montmartre logo"/></a>
+                            <div class="kvk">
+                                kvk: 76827593
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <!-- FOOTER BOTTOM SECTION -->
+            <div id="footerBottom">
+                <section class="row">
+                    
+                    <div class="column-4 column-small-4">
+                        - deze website is ontworpen door miki -                        
+                    </div>
+                    <div class="column-4 column-small-4">
+                        - Amsterdam 2021 -    
+                    </div>
+                
+                    <div class="column-4 column-small-4">
+                        - <a href="https://www.miki101.nl" target="_blank">www.miki101.nl</a> -
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
